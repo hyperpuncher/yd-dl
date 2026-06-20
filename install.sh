@@ -8,6 +8,7 @@ arch=$(uname -m)
 
 case "$os-$arch" in
 	Linux-x86_64)  binary=yd-dl-linux-amd64 ;;
+	Linux-aarch64) binary=yd-dl-linux-arm64 ;;
 	Darwin-arm64)  binary=yd-dl-darwin-arm64 ;;
 	Darwin-x86_64) binary=yd-dl-darwin-amd64 ;;
 	*)             echo "unsupported: $os $arch"; exit 1 ;;

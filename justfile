@@ -18,5 +18,11 @@ vet: fmt
 
 build-all: vet build-linux build-mac build-mac-x64 build-windows
 
+# tag and release via goreleaser: just release v1.0.0
+release VERSION:
+	git tag -a {{VERSION}} -m "{{VERSION}}"
+	git push origin {{VERSION}}
+	goreleaser release --clean
+
 clean:
 	trash bin
