@@ -1,7 +1,7 @@
 #!/bin/sh
 set -eu
 
-# one-liner: curl -sSL https://raw.githubusercontent.com/user/yd-dl/main/install.sh | sh
+# one-liner: curl -sSL https://raw.githubusercontent.com/hyperpuncher/yd-dl/main/install.sh | sh
 
 os=$(uname -s)
 arch=$(uname -m)
@@ -14,7 +14,7 @@ case "$os-$arch" in
 	*)             echo "unsupported: $os $arch"; exit 1 ;;
 esac
 
-url="https://github.com/user/yd-dl/releases/latest/download/$binary"
+url="https://github.com/hyperpuncher/yd-dl/releases/latest/download/$binary"
 dest="$HOME/.local/bin/yd-dl"
 
 mkdir -p "$(dirname "$dest")"

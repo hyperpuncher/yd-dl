@@ -7,13 +7,13 @@ Download all files from a public Yandex Disk link.
 **Linux / macOS:**
 
 ```sh
-curl -sSL https://raw.githubusercontent.com/user/yd-dl/main/install.sh | sh
+curl -sSL https://raw.githubusercontent.com/hyperpuncher/yd-dl/main/install.sh | sh
 ```
 
 **Windows (PowerShell):**
 
 ```powershell
-irm https://raw.githubusercontent.com/user/yd-dl/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/hyperpuncher/yd-dl/main/install.ps1 | iex
 ```
 
 Or build from source:
